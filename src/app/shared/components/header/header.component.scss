@@ -1,0 +1,35 @@
+@import "../../../../assets/style/main.scss";
+
+.Header {
+  background-color: var(--light-blue);
+  padding-inline: 2rem;
+  padding: 1rem;
+  
+
+  .button1 {
+    border: none;
+
+    .Lang_style {
+      width: fit-content;
+      height: 35px;
+      border: 1px solid var(--white);
+      border-radius: 15px;
+      display: flex;
+      gap: 5px;
+      padding: 5px;
+
+      span {
+        color: var(--white);
+
+        i {
+          color: var(--white);
+        }
+      }
+
+      @include mobile-only {
+        height: 30px;
+        padding: 3px;
+      }
+    }
+  }
+}

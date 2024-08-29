@@ -1,0 +1,9 @@
+@import "../../../../../assets/style/main.scss";
+
+.Home {
+  background: linear-gradient(180deg, #505ac9 50%, #fff 50%);
+
+  @include mobile-only {
+    background: linear-gradient(180deg, #505ac9 10%, #fff 10%);
+  }
+}

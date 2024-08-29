@@ -1,0 +1,12 @@
+<div  class="Header mb-0 d-flex justify-content-end">
+      <button class="btn button1" type="button">
+        <div (click)="switchLanguage('ar') " *ngIf="lang === 'en'" class="Lang_style">
+          <span class="m-auto"><i class="fa-solid fa-globe"></i></span>
+          <span class="m-auto">AR</span>
+        </div>
+        <div (click)="switchLanguage('en') " *ngIf="lang === 'ar'" class="Lang_style">
+          <span class="m-auto"><i class="fa-solid fa-globe"></i></span>
+          <span class="m-auto">EN</span>
+        </div>
+      </button>
+</div>

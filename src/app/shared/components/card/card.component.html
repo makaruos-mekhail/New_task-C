@@ -1,0 +1,23 @@
+<div class="container row m-0 p-0 d-flex justify-content-evenly ">
+  <div class="col-12 col-sm-3 p-2" *ngFor="let item of data">
+    <div class="card_Style">
+      <img [src]="item?.image" class="w-100 p-2" alt="">
+      <p>
+        <i class="fa-regular fa-circle-check"></i> {{ item.name }}
+      </p>
+      <p>
+        <i class="fa-regular fa-circle-check"></i> <span>{{'card.discount' |translate}} </span>{{ item.rental_discount }} %
+      </p>
+      <p>
+        <i class="fa-regular fa-circle-check"></i> <span>{{'card.allow' |translate}} </span>{{ item.extra_hours }} {{'card.extra_hours' |translate}}
+
+      </p>
+      <p>
+        <i class="fa-regular fa-circle-check"></i> <span>{{'card.allow' |translate}} </span>{{ item.allowed_Kilos }} {{'card.allow_Kilos' |translate}}
+
+      </p>
+
+    </div>
+  </div>
+
+</div>
